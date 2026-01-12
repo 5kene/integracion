@@ -4,6 +4,7 @@ pipeline {
     tools {
         nodejs "Node25"
         dockerTool "Dockertool" 
+        args "-v /var/run/docker.sock:/var/run/docker.sock"
     }
 
     stages {
